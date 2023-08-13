@@ -1,0 +1,63 @@
+.news {
+  position: relative;
+  &__item {
+    display: grid;
+    row-gap: 50px;
+
+    @include onTablet {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 30px;
+    }
+  }
+
+  &__photo {
+    width: 100%;
+  }
+
+  &__content {
+    margin-bottom: 30px;
+  }
+
+  &__bottom {
+    &__title {
+      font-family: "Playfair Display", sans-serif;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 125%;
+      color: $section-title-color;
+    }
+
+    &__text {
+      color: $section-title-color;
+    }
+
+    &__email {
+      border-bottom: 1px solid black;
+      text-decoration: none;
+      color: $section-title-color;
+      width: 100%;
+      transition: 0.3s;
+
+      &:hover {
+        border-bottom: 1px solid $button-hover-color;
+        color: $button-hover-color;
+      }
+
+      &:active {
+        border-bottom: 1px solid $button-activecolor;
+        color: $button-activecolor;
+      }
+
+      &:disabled {
+        border-bottom: 1px solid black;
+        color: black;
+      }
+
+      &--margin {
+        margin-top: 50px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,79 @@
+.header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: $bg-color;
+  position: relative;
+
+  &__bottom {
+    @include contentPaddingInline;
+
+  }
+
+  &__information {
+    margin-top: 50px;
+    margin-bottom: 40px;
+
+    @include onDesktop {
+      width: 50%;
+    }
+
+    &__date {
+      font-size: 14px;
+      line-height: 140%;
+    }
+
+  }
+
+  &__title {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 100%;
+    color: inherit;
+
+    @include onTablet {
+      font-size: 72px;
+    }
+
+    @include onDesktop {
+      font-size: 96px;
+
+    }
+
+    &--margin {
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__photo {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 273px;
+    max-height: 100%;
+
+    @include onTablet {
+      height: 450px;
+    }
+
+    @include onDesktop {
+      right: 0;
+      transform: translateX(5%);
+      height: 90%;
+    }
+  }
+
+  &__button {
+    margin-top: 40px;
+    @include onTablet {
+      margin-top: 50px;
+    }
+
+    @include onDesktop {
+      margin-top: 80px;
+    }
+  }
+}

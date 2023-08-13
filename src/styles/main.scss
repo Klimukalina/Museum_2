@@ -1,7 +1,19 @@
 @import "utils";
 @import "fonts";
 @import "typography";
-
-body {
-  background: $c-gray;
-}
+@import "./blocks/page";
+@import "./blocks/header";
+@import "./blocks/top-bar";
+@import "./blocks/button";
+@import "./blocks/icon";
+@import "./blocks/menu";
+@import "./blocks/language-selector";
+@import "./blocks/nav";
+@import "./blocks/section-title";
+@import "./blocks/main.scss";
+@import "./blocks/actually";
+@import "./blocks/exhibitions";
+@import "./blocks/upcoming";
+@import "./blocks/landing";
+@import "./blocks/news";
+@import "./blocks/footer";

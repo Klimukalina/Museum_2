@@ -1,0 +1,52 @@
+.footer {
+  background-color: $bg-color;
+
+  &__content {
+    @include pageGrid;
+    grid-template-columns: 1fr;
+
+    @include onTablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include onDesktop {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &__icons {
+      display: flex;
+      column-gap: 20px;
+    }
+  }
+  &__schedule {
+    &__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+  }
+
+  &__additional {
+    margin-top: 72px;
+    display: flex;
+    justify-content: space-between;
+
+    &__icon {
+      // grid-template-columns: 1/-1;
+      background-image: url(../images/footer-icons/scroll-up.svg);
+      height: 30px;
+      width: 30px;
+    }
+  }
+}

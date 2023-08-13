@@ -1,0 +1,16 @@
+.language-selector {
+  display: flex;
+  align-items: center;
+  color: #fff;
+
+  &__select {
+    background-color: $bg-color;
+    border: none;
+    color: #fff;
+  }
+
+  &__option {
+    border: none;
+    background-color: $bg-color;
+  }
+}

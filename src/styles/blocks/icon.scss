@@ -1,0 +1,32 @@
+.icon {
+  &--menu {
+    display: block;
+    background-image: url(../images/icons/menu.svg);
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 20px;
+    align-items: center;
+
+    @include hover(transform, scale(1.2));
+
+    @mixin onTablet {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &--close {
+    display: block;
+    background-image: url(../images/icons/close.svg);
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+
+    @include hover(transform, scale(1.2));
+
+    @mixin onDesktop {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

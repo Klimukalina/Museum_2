@@ -1,0 +1,30 @@
+.nav {
+  font-weight: 700;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 20px;
+  line-height: 150%;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #fff;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+
+    @include onTablet {
+      font-family: "Playfair Display", sans-serif;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 120%;
+    }
+
+  }
+}
